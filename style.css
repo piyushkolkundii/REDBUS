@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* global style  */
+* {
+    padding: 0;
+    margin: 0px;
+    /* margin-top:5px; */
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 200vh;
+}
+
+.navbar {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 86px 34px rgba(0, 0, 0, 0.01), 0 48px 29px rgba(0, 0, 0, 0.03),
+        0 5px 12px rgba(0, 0, 0, 0.05), 0 0 0 rgba(0, 0, 0, 0.05);
+    height: 80px;
+    padding: 5px 80px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav_container {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav_container>.redbus_logo {
+    width: 5rem;
+}
+
+/* navbar middle section */
+.nav_middle_section {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    font-size: small;
+    /* background-color: red;
+  color: #fff; */
+}
+
+/* .nav_middle_section .bus_tickets{
+    background-color: red;
+  color: #fff;
+} */
+
+
+.nav_middle_section>li {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav_middle_section :hover,
+.nav_right_section :hover {
+    background-color: #f0f0f0;
+}
+
+.nav_right_section {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: small;
+}
+
+.nav_middle_section>li>img {
+    width: 2rem;
+    margin: auto;
+}
+
+.nav_right_section>li {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav_right_section>li>img {
+    width: 20px;
+}
+
+/* section main */
+main {
+    padding-top: 80px;
+}
+
+/* section one */
+.section_one {
+    width: 100%;
+    background-image: url("imagebg.png");
+    height: 32.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  } 
+ 
+.section_one_container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 80px 0 80px;
+    gap: 20px;
+}
+
+/* .section_one {
+    width: 100px;
+    position: absolute;
+} */
+
+
+
+.section_one_heading {
+    color: white;
+    font-size: 32px;
+    margin: 60px 0 20px 0;
+}
+
+/* section one filter */
+
+.section_one_container>.filter {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 12px, rgba(0, 0, 0, 0.05) 0px 0px 0px;
+    border-radius: 32px;
+}
+
+.filter>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 0 30px;
+    border-right: solid 1px rgb(173, 171, 171);
+    height: 112px;
+}
+
+.filter img {
+    width: 30px;
+}
+
+.filter>div>input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    max-width: 195px;
+}
+
+.filter>.search {
+    width: 243px;
+    background-color: #f0f0f0;
+    height: 112px;
+    border-radius: 0 32px 32px 0;
+    border: none;
+    background-color: #d84e55;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.section_one_container > .trending_offers {
+    width: 1200px;
+    padding: 32px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 25px;
+    border-radius: 32px;
+    position: absolute;
+    bottom: -150px;
+  }
+  
+  .trending_offers > .trending_offers_heading {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .trending_offers > .offerCarousel {
+    overflow-x: scroll;
+    gap: 30px;
+    display: flex;
+    width: 1140px;
+  }
